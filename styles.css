@@ -1,0 +1,36 @@
+body.dark-mode {
+  background-color: #222;  /* Dark background */
+  color: #ddd;            /* Light text color */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 320px 200px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#board {
+  border: 2px solid #ddd;  /* Light border for visibility */
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #333;  /* Dark sidebar background */
+  color: #ddd;            /* Light text color for sidebar */
+}
+
+.side-bar h1,
+.side-bar p {
+  margin: 10px 0;         /* Add some margin for readability */
+}
+
+.play-btn {  /* Removed class name as it's not used */
+  background-color: #444;  /* Darker button background */
+  color: #fff;            /* White text for button */
+  font-size: 16px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
