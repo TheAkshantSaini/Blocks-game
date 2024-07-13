@@ -7,15 +7,24 @@
   <title>Tetris</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body class="dark-mode">  <div class="container">
-    <canvas id="board"></canvas>
-    <div class="side-bar">
-      <div class="">
-        <h1>Tetris</h1>
-        <p>Score <span id="score">0</span></p>
-      </div>
-      <button id="play">Play</button>
+<body class="dark-mode">
+  <div class="taskbar">
+    <div class="name-tetris">
+      <h1>Tetris</h1>
     </div>
+    <div class="score">
+      <p>Score: <span id="score">0</span></p>
+    </div>
+  </div>
+  <div class="container">
+    <canvas id="board"></canvas>
+    <div id="controls">
+      <button id="left" class="control-button">⬅️</button>
+      <button id="up" class="control-button">⬆️</button>
+      <button id="down" class="control-button">⬇️</button>
+      <button id="right" class="control-button">➡️</button>
+    </div>
+    <button id="play">Play</button>
   </div>
   <script src="./index.js"></script>
 </body>
